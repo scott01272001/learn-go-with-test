@@ -2,13 +2,12 @@ package main
 
 import (
 	"fmt"
-	"reflect"
+	"scott/learGoWithTest/structs"
 )
 
 func main() {
-	fun := func() {
-		fmt.Println("asd")
-	}
+	circle := structs.Circle{Radius: 10.0}
+	fmt.Println(circle.Area())
 
-	fmt.Println(reflect.TypeOf(fun))
+	fmt.Printf("%g \n", circle.Area())
 }
